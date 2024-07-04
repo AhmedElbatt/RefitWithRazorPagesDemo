@@ -1,0 +1,12 @@
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\bin\Debug\net8.0\RefitWithRazorPagesDemo.Domain.deps.json
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\bin\Debug\net8.0\RefitWithRazorPagesDemo.Domain.dll
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\bin\Debug\net8.0\RefitWithRazorPagesDemo.Domain.pdb
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.AssemblyInfoInputs.cache
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.AssemblyInfo.cs
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.csproj.CoreCompileInputs.cache
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.sourcelink.json
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.dll
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\refint\RefitWithRazorPagesDemo.Domain.dll
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.Domain.pdb
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\ref\RefitWithRazorPagesDemo.Domain.dll
