@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/.vs/RefitWithRazorPagesDemo/DesignTimeBuild/.dtbcache.v2
+/src/.vs/RefitWithRazorPagesDemo/FileContentIndex/aab80545-fdf0-4255-b82f-d771bcf76369.vsidx
+*.vsidx
+*.exe
+*.pdb
+*.dll
+/src/RefitWithRazorPagesDemo.Api/bin/Debug/net8.0
+/src/.vs/RefitWithRazorPagesDemo/v17
+/src/RefitWithRazorPagesDemo.Api/obj
