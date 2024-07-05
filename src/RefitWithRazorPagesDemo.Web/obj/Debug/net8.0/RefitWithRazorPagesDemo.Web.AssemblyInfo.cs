@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RefitWithRazorPagesDemo.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5d518194db91b2d2b3f14c7ae8807e90249909d2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d741d47e91447af9a953c177d07cc29dadadda5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("RefitWithRazorPagesDemo.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RefitWithRazorPagesDemo.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
