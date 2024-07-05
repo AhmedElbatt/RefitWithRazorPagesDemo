@@ -11,7 +11,7 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
     {
         [HttpGet]
         public ActionResult<List<Product>> GetProducts()
-        {
+        {  
             return Ok(ProductStore.ProductList);
         }
 
