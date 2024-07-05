@@ -11,3 +11,12 @@
 /src/RefitWithRazorPagesDemo.Api/bin/Debug/net8.0
 /src/.vs/RefitWithRazorPagesDemo/v17
 /src/RefitWithRazorPagesDemo.Api/obj
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.AssemblyInfoInputs.cache
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.assets.cache
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.csproj.AssemblyReference.cache
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.GeneratedMSBuildEditorConfig.editorconfig
+/src/RefitWithRazorPagesDemo.Web/obj/project.assets.json
+/src/RefitWithRazorPagesDemo.Web/obj/project.nuget.cache
+/src/RefitWithRazorPagesDemo.Web/obj/RefitWithRazorPagesDemo.Web.csproj.nuget.dgspec.json
+/src/RefitWithRazorPagesDemo.Web/obj/RefitWithRazorPagesDemo.Web.csproj.nuget.g.props
+/src/RefitWithRazorPagesDemo.Web/obj/RefitWithRazorPagesDemo.Web.csproj.nuget.g.targets
