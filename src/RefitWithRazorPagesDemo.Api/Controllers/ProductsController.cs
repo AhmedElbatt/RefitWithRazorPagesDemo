@@ -18,7 +18,7 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
         [HttpPost]
         public ActionResult<List<Product>> CreateProduct([FromBody] ProductToUpsertDto product)
         {
-            ProductStore.ProductList.Add(new Product { Category = product.Category, Name = product.Name, Price = product.Price });
+            ProductStore.ProductList.Add(new Product { Category = product.Category, Name = product.Name, Price = product.Price, CreatedAt=product.CreatedAt });
             return Ok(ProductStore.ProductList);
         }
 
@@ -32,6 +32,7 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
             productToUpdate.Category = productData.Category;
             productToUpdate.Name = productData.Name;
             productToUpdate.Price = productData.Price;
+            productToUpdate.CreatedAt = productData.CreatedAt;
 
             ProductStore.ProductList.Where(x => x.Id == id).Select(x => { x.Name = productData.Name; x.Category = productData.Category; x.Price = productData.Price; return x; });
             return Ok(ProductStore.ProductList);
