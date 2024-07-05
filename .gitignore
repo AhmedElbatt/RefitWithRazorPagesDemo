@@ -396,3 +396,7 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/src/RefitWithRazorPagesDemo.Web/bin/Debug/net8.0/RefitWithRazorPagesDemo.Web.deps.json
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.csproj.CoreCompileInputs.cache
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.csproj.FileListAbsolute.txt
+/src/RefitWithRazorPagesDemo.Web/obj/Debug/net8.0/RefitWithRazorPagesDemo.Web.sourcelink.json
