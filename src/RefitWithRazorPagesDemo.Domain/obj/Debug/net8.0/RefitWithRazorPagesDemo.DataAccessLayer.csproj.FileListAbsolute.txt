@@ -1,0 +1,12 @@
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\bin\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.deps.json
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\bin\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.dll
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\bin\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.pdb
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.AssemblyInfo.cs
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.sourcelink.json
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.dll
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\refint\RefitWithRazorPagesDemo.DataAccessLayer.dll
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\RefitWithRazorPagesDemo.DataAccessLayer.pdb
+C:\Users\AhmedElbatt\OneDrive - Vexcash AG\Desktop\Demo Projects\RefitWithRazorPagesDemo\src\RefitWithRazorPagesDemo.Domain\obj\Debug\net8.0\ref\RefitWithRazorPagesDemo.DataAccessLayer.dll

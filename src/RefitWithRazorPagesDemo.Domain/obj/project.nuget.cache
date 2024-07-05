@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xrI6l9RHXWs=",
+  "dgSpecHash": "PQAFeVRB0zc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\RefitWithRazorPagesDemo.Domain.csproj",
+  "projectFilePath": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\RefitWithRazorPagesDemo.DataAccessLayer.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

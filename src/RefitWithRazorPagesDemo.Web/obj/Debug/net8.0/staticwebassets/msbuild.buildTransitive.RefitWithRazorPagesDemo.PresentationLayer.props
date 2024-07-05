@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\RefitWithRazorPagesDemo.PresentationLayer.props" />
+</Project>

@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitWithRazorPagesDemo.Api", "RefitWithRazorPagesDemo.Api\RefitWithRazorPagesDemo.Api.csproj", "{19EF5304-B803-415B-80B1-79AAB5B29B97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitWithRazorPagesDemo.BuisnessLogicLayer", "RefitWithRazorPagesDemo.Api\RefitWithRazorPagesDemo.BuisnessLogicLayer.csproj", "{19EF5304-B803-415B-80B1-79AAB5B29B97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitWithRazorPagesDemo.Domain", "RefitWithRazorPagesDemo.Domain\RefitWithRazorPagesDemo.Domain.csproj", "{FB50EFD1-C35C-45D0-A46D-47A1F741A9BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitWithRazorPagesDemo.DataAccessLayer", "RefitWithRazorPagesDemo.Domain\RefitWithRazorPagesDemo.DataAccessLayer.csproj", "{FB50EFD1-C35C-45D0-A46D-47A1F741A9BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitWithRazorPagesDemo.Web", "RefitWithRazorPagesDemo.Web\RefitWithRazorPagesDemo.Web.csproj", "{59B422F6-5BE5-4323-8CE0-FE64ED7900FD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitWithRazorPagesDemo.PresentationLayer", "RefitWithRazorPagesDemo.Web\RefitWithRazorPagesDemo.PresentationLayer.csproj", "{59B422F6-5BE5-4323-8CE0-FE64ED7900FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
