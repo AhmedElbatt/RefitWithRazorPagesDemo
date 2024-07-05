@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\RefitWithRazorPagesDemo.DataAccessLayer.csproj",
-      "projectName": "RefitWithRazorPagesDemo.DataAccessLayer",
-      "projectPath": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\RefitWithRazorPagesDemo.DataAccessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\RefitWithRazorPagesDemo.Domain.csproj",
+      "projectName": "RefitWithRazorPagesDemo.Domain",
+      "projectPath": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\RefitWithRazorPagesDemo.Domain.csproj",
       "packagesPath": "C:\\Users\\AhmedElbatt\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Domain\\obj\\",
       "projectStyle": "PackageReference",
