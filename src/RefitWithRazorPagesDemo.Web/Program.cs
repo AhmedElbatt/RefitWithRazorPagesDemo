@@ -1,3 +1,6 @@
+using Refit;
+using RefitWithRazorPagesDemo.Web.Services;
+
 namespace RefitWithRazorPagesDemo.Web
 {
     public class Program
@@ -8,6 +11,12 @@ namespace RefitWithRazorPagesDemo.Web
 
             // Add services to the container.
             builder.Services.AddRazorPages();
+
+            builder.Services.AddRefitClient<IProductService>()
+                .ConfigureHttpClient(c =>
+                {
+                    c.BaseAddress = new Uri("https://localhost:7197/");
+                });
 
             var app = builder.Build();
 

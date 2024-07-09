@@ -10,22 +10,26 @@ namespace RefitWithRazorPagesDemo.Api
         {
             ProductList.Add(new Product
             {
+                Id = 1,
                 Category = "Mobile",
                 Name = "IPHONE 11",
                 Price = 1500
-            }); 
+            });
 
             ProductList.Add(new Product
             {
-                Category = "laptop",
+                Id = 2,
+                Category = "Laptop",
                 Name = "Dell MX9900",
                 Price = 1500,
             });
 
             ProductList.Add(new Product
             {
-                Category = "smart watches",
-                Name = "mac fit",
+
+                Id = 3,
+                Category = "TV",
+                Name = "Samsung TV",
                 Price = 1500,
             });
         }

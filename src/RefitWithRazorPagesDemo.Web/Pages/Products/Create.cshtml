@@ -1,0 +1,46 @@
+﻿@page
+@model RefitWithRazorPagesDemo.Web.Pages.Products.CreateModel
+@{
+}
+
+@if(Model.HasError)
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+
+
+<form method="post">
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input class="form-control" asp-for="ProductToUpsertDto.Name">
+        <span asp-validation-for="ProductToUpsertDto.Name" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category</label>
+        <select class="form-select" asp-for="ProductToUpsertDto.Category">
+            <option selected>Select</option>
+            <option value="Mobile">Mobile</option>
+            <option value="TV">TV</option>
+            <option value="Laptop">Laptop</option>
+        </select>
+        <span asp-validation-for="ProductToUpsertDto.Category" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Price</label>
+        <input class="form-control" asp-for="ProductToUpsertDto.Price">
+        <span asp-validation-for="ProductToUpsertDto.Price" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Created At</label>
+        <input class="form-control" asp-for="ProductToUpsertDto.CreatedAt">
+        <span asp-validation-for="ProductToUpsertDto.CreatedAt" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-info">Cancel</button>
+</form>

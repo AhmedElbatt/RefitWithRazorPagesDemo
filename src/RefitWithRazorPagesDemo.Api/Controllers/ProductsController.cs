@@ -11,19 +11,29 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
     {
         [HttpGet]
         public ActionResult<List<Product>> GetProducts()
-        {  
+        {
             return Ok(ProductStore.ProductList);
+        }
+
+        [HttpGet("{id}")]
+        public ActionResult<Product> GetProductById(int id)
+        {
+            var product = ProductStore.ProductList.SingleOrDefault(x => x.Id == id);
+            if (product == null)
+                return NotFound($"product Id: {id} not found");
+
+            return Ok(product);
         }
 
         [HttpPost]
         public ActionResult<List<Product>> CreateProduct([FromBody] ProductToUpsertDto product)
         {
-            ProductStore.ProductList.Add(new Product { Category = product.Category, Name = product.Name, Price = product.Price, CreatedAt=product.CreatedAt });
-            return Ok(ProductStore.ProductList);
+            ProductStore.ProductList.Add(new Product { Id = new Random().Next(4, 100), Category = product.Category, Name = product.Name, Price = product.Price, CreatedAt = product.CreatedAt });
+            return Created();
         }
 
         [HttpPut("{id}")]
-        public ActionResult<List<Product>> UpdateProduct(int id, [FromBody] ProductToUpsertDto productData)
+        public ActionResult<Product> UpdateProduct(int id, [FromBody] ProductToUpsertDto productData)
         {
             var productToUpdate = ProductStore.ProductList.SingleOrDefault(x => x.Id == id);
             if (productToUpdate == null)
@@ -35,11 +45,11 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
             productToUpdate.CreatedAt = productData.CreatedAt;
 
             ProductStore.ProductList.Where(x => x.Id == id).Select(x => { x.Name = productData.Name; x.Category = productData.Category; x.Price = productData.Price; return x; });
-            return Ok(ProductStore.ProductList);
+            return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public ActionResult<List<Product>> DeleteProduct(int id)
+        public ActionResult<Product> DeleteProduct(int id)
         {
 
             var productToDelete = ProductStore.ProductList.SingleOrDefault(x => x.Id == id);

@@ -8,7 +8,7 @@ namespace RefitWithRazorPagesDemo.Domain.Entities
 {
     public class Product
     {
-        public int Id { get; private set; } = new Random().Next(1, 100);
+        public int Id { get;  set; }
         public string Name { get; set; } = default!;
         public string Category { get; set; } = default!;
         public decimal Price { get; set; }

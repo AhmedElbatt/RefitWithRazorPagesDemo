@@ -1,0 +1,43 @@
+﻿@page
+@model RefitWithRazorPagesDemo.Web.Pages.Products.EditModel
+@{
+
+}
+@if (Model.HasError)
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+<form method="post">
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Name</label>
+        <input class="form-control" asp-for="@Model.ProductToUpdate.Name">
+        <span asp-validation-for="ProductToUpdate.Name" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category</label>
+        <select class="form-select" asp-for="@Model.ProductToUpdate.Category">
+            <option selected>Select</option>
+            <option value="Mobile">Mobile</option>
+            <option value="TV">TV</option>
+            <option value="Laptop">Laptop</option>
+        </select>
+        <span asp-validation-for="ProductToUpdate.Category" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Price</label>
+        <input class="form-control" asp-for="@Model.ProductToUpdate.Price">
+        <span asp-validation-for="ProductToUpdate.Price" class="text-danger"></span>
+    </div>
+
+    <div class="row mb-3">
+        <label for="exampleInputEmail1" class="form-label">Created At</label>
+        <input class="form-control" asp-for="@Model.ProductToUpdate.CreatedAt">
+        <span asp-validation-for="ProductToUpdate.CreatedAt" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,39 @@
+﻿@page
+@model RefitWithRazorPagesDemo.Web.Pages.Products.IndexModel
+@{
+
+}
+
+<a class="btn btn-success btn-sm" href="/products/Create">Create New Product</a>
+<br />
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Category</th>
+            <th scope="col">Price</th>
+            <th scope="col">Created At</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <th scope="row">@product.Id</th>
+                <th scope="row">@product.Name</th>
+                <th scope="row">@product.Category</th>
+                <th scope="row">@product.Price</th>
+                <th scope="row">@product.CreatedAt.ToString("dd.MM.yyyy")</th>
+                <th scope="row">
+                    <a class="btn btn-primary btn-sm" href="/products/Edit?productId=@product.Id">Edit</a>
+                    <form class="form" method="post">
+                        <input class="btn btn-danger btn-sm" type="submit" value="ButtonDelete" asp-page-handler="ButtonDelete" asp-route-id="@product.Id" />
+                    </form>
+                </th>
+            </tr>
+        }
+    </tbody>
+</table>

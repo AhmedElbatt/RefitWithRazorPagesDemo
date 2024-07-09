@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "3cBVg6ZbGXvFNAf1JXu4jFO1PRosQ/sLvc9ii1YCi4g=",
+  "Hash": "9YXERlSzXc6T5Cps1mxykKr7LkoYbXCubfOqrHSPyVk=",
   "Source": "RefitWithRazorPagesDemo.Web",
   "BasePath": "_content/RefitWithRazorPagesDemo.Web",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\AhmedElbatt\\OneDrive - Vexcash AG\\Desktop\\Demo Projects\\RefitWithRazorPagesDemo\\src\\RefitWithRazorPagesDemo.Api\\RefitWithRazorPagesDemo.Api.csproj",
+      "Version": 2,
+      "Source": "RefitWithRazorPagesDemo.Api",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "RefitWithRazorPagesDemo.Web\\wwwroot",

@@ -10,4 +10,8 @@
     <PackageReference Include="Refit.HttpClientFactory" Version="7.1.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RefitWithRazorPagesDemo.Api\RefitWithRazorPagesDemo.Api.csproj" />
+  </ItemGroup>
+
 </Project>
