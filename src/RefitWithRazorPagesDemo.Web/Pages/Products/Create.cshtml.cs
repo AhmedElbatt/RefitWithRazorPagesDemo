@@ -2,7 +2,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using RefitWithRazorPagesDemo.DataAccessLayer.Dtos;
 using RefitWithRazorPagesDemo.Web.Services;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RefitWithRazorPagesDemo.Web.Pages.Products
 {
