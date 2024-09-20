@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using RefitWithRazorPagesDemo.Api.Contracts;
 using RefitWithRazorPagesDemo.DataAccessLayer.Dtos;
 using RefitWithRazorPagesDemo.Domain.Entities;
 
@@ -9,10 +9,19 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
+        private readonly IProductService _productService;
+
+        public ProductsController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         [HttpGet]
         public ActionResult<List<Product>> GetProducts()
         {
-            return Ok(ProductStore.ProductList);
+            //return Ok(ProductStore.ProductList);
+
+            return Ok(_productService.GetProducts());
         }
 
         [HttpGet("{id}")]
@@ -29,6 +38,7 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
         public ActionResult<List<Product>> CreateProduct([FromBody] ProductToUpsertDto product)
         {
             ProductStore.ProductList.Add(new Product { Id = new Random().Next(4, 100), Category = product.Category, Name = product.Name, Price = product.Price, CreatedAt = product.CreatedAt });
+
             return Created();
         }
 
