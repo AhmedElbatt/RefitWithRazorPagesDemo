@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitWithRazorPagesDemo.Dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitWithRazorPagesDemo.Web", "RefitWithRazorPagesDemo.Web\RefitWithRazorPagesDemo.Web.csproj", "{59B422F6-5BE5-4323-8CE0-FE64ED7900FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RefitWithRazorPagesDemo.Blazor", "RefitWithRazorPagesDemo.Blazor\RefitWithRazorPagesDemo.Blazor.csproj", "{2CE1D937-FBF8-4FB2-A716-50381B1446A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RefitWithRazorPagesDemo.Blazor", "RefitWithRazorPagesDemo.Blazor\RefitWithRazorPagesDemo.Blazor.csproj", "{2CE1D937-FBF8-4FB2-A716-50381B1446A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

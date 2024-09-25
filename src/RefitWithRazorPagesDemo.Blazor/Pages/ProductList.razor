@@ -1,0 +1,25 @@
+﻿@page "/"
+@using RefitWithRazorPagesDemo.Blazor.Components
+@inject IProductService _productService;
+
+<PageTitle>Home</PageTitle>
+
+<div class="container mt-4">
+    <div class="row">
+        @foreach (var product in _products)
+        {
+            <ProductComponent product="@product" />
+        }
+    </div>
+</div>
+
+
+
+@code {
+    List<Product> _products = new List<Product>();
+    protected override async Task OnInitializedAsync()
+    {
+        _products = await _productService.GetProducts();
+        await base.OnInitializedAsync();
+    }
+}
