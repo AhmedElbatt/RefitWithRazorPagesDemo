@@ -1,0 +1,30 @@
+﻿@page "/product/{id:int}"
+@using RefitWithRazorPagesDemo.Blazor.Components
+@inject IProductService _productService;
+
+<div>
+    @if(Product != null)
+    {
+        <ProductComponent Product="@Product" SummarizeDescription="false"></ProductComponent>
+        <br/>
+        <h3>Specifications</h3>
+        <div>@((MarkupString)Product.Specifications)</div>
+    }
+    else
+    {
+        <div class="alert alert-danger" role="alert">
+            Product with Id @Id not found in the system
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    Product? Product = null;
+    protected override async Task OnInitializedAsync()
+    {
+        Product = await _productService.GetProductById(Id);
+        await base.OnInitializedAsync();
+    }
+}

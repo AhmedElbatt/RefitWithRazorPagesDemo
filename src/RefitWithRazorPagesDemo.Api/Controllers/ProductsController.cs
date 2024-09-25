@@ -27,7 +27,7 @@ namespace RefitWithRazorPagesDemo.Api.Controllers
         [HttpGet("{id}")]
         public ActionResult<Product> GetProductById(int id)
         {
-            var product = ProductStore.ProductList.SingleOrDefault(x => x.Id == id);
+            var product = _productService.GetProduct(id);
             if (product == null)
                 return NotFound($"product Id: {id} not found");
 

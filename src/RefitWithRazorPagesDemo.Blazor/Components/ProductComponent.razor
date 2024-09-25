@@ -1,16 +1,26 @@
 ﻿<div class="col-sm-4 p-2">
     <div class="card">
         <div class="d-flex justify-content-center p-2">
-            <img src="@product.ImageUrl" height="200" alt="...">
+            <img src="@Product.ImageUrl" height="200" alt="...">
         </div>
         <div class="card-body">
-            <h5 class="card-title">@product.Name</h5>
-            <p class="card-text">@product.Description.Substring(0, Math.Min(40, product.Description.Length))...</p>
+            <h5 class="card-title"><a href="/product/@Product.Id">@Product.Name</a></h5>
+            @if (SummarizeDescription)
+            {
+                <p class="card-text">@Product.Description.Substring(0, Math.Min(40, Product.Description.Length))...</p>
+            }
+            else
+            {
+                <p class="card-text">@Product.Description</p>
+            }
         </div>
     </div>
 </div>
 
 @code {
     [Parameter]
-    public Product product { get; set; }
+    public Product Product { get; set; }
+
+    [Parameter]
+    public bool SummarizeDescription { get; set; } = true;
 }

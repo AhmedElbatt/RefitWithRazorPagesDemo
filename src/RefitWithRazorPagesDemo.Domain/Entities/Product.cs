@@ -8,6 +8,7 @@
 
         public string ImageUrl { get; set; }
 
+        public string Specifications { get; set; }
         public string Category { get; set; } = default!;
         public decimal Price { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
