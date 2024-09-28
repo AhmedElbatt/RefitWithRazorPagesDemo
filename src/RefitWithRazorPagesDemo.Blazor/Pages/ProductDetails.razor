@@ -3,12 +3,15 @@
 @inject IProductService _productService;
 
 <div>
-    @if(Product != null)
+    @if (Product != null)
     {
-        <ProductComponent Product="@Product" SummarizeDescription="false"></ProductComponent>
-        <br/>
-        <h3>Specifications</h3>
-        <div>@((MarkupString)Product.Specifications)</div>
+        <ProductComponent Product="@Product" SummarizeDescription="false">
+            <br />
+            <h3>Specifications</h3>
+            <div>@((MarkupString)Product.Specifications)</div>
+
+        </ProductComponent>
+
     }
     else
     {

@@ -1,9 +1,14 @@
-﻿<div class="col-sm-4 p-2">
+﻿@using System.Globalization
+<div class="col-sm-4 p-2">
     <div class="card">
         <div class="d-flex justify-content-center p-2">
             <img src="@Product.ImageUrl" height="200" alt="...">
         </div>
         <div class="card-body">
+            <div class="alert alert-success" role="alert">
+                @Product.Price.ToString(CurrencyFormat, CurrencyCulture)
+            </div>
+
             <h5 class="card-title"><a href="/product/@Product.Id">@Product.Name</a></h5>
             @if (SummarizeDescription)
             {
@@ -15,6 +20,14 @@
             }
         </div>
     </div>
+    <div class="zoom@_zoomVariable" @onclick="IncrementZoomOnDivClicked" style="color:@_color">
+        @ChildContent
+
+        <button @onclick="ToggleRedColor" @onclick:stopPropagation>Toggle to Red</button>
+        <br/>
+        <a href="#" @onclick="ToggleRedColor" @onclick:preventDefault @onclick:stopPropagation>Toggle to Red (a tag)</a>
+    </div>
+
 </div>
 
 @code {
@@ -22,5 +35,26 @@
     public Product Product { get; set; }
 
     [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
     public bool SummarizeDescription { get; set; } = true;
+
+    [CascadingParameter(Name = "CurrencyCulture")]
+    public CultureInfo CurrencyCulture { get; set; }
+
+    [CascadingParameter(Name = "CurrencyFormat")]
+    public string CurrencyFormat { get; set; }
+
+    public int _zoomVariable = 0;
+
+    void IncrementZoomOnDivClicked()
+    {
+        if (_zoomVariable > 3)
+            _zoomVariable = 0;
+        _zoomVariable++;
+    }
+
+    string _color = string.Empty;
+    void ToggleRedColor() => _color = _color == "red" ? "black" : "red";
 }

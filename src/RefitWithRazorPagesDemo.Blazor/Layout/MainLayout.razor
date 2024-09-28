@@ -1,4 +1,5 @@
-﻿@inherits LayoutComponentBase
+﻿@using System.Globalization
+@inherits LayoutComponentBase
 <div class="page">
     <div class="sidebar">
         <NavMenu />
@@ -10,7 +11,18 @@
         </div>
 
         <article class="content px-4">
-            @Body
+            <CascadingValue Name="CurrencyCulture" Value="@_CurrencyCulture">
+                <CascadingValue Name="CurrencyFormat" Value="@_CurrencyFormat">
+                    @Body
+                </CascadingValue>
+            </CascadingValue>
+
         </article>
     </main>
 </div>
+
+@code
+{
+    CultureInfo _CurrencyCulture = new CultureInfo("de-DE");
+    public string _CurrencyFormat = "C2";
+}
