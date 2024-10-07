@@ -1,0 +1,66 @@
+﻿@using System.Text
+<div style="border:dashed">
+    Sub
+    <div class="alert alert-secondary" role="alert">
+        Counter value is : @_counter
+        Number Value is: @Number
+    </div>
+    <button type="button" class="btn btn-primary" @onclick="incrementCount">Set Counter</button>
+    <button type="button" class="btn btn-primary" @onclick="async ()=> await SetNewGuid.InvokeAsync(Guid.NewGuid().ToString())">Set New Guid</button>
+</div>
+@code {
+
+    public int _counter;
+
+    void incrementCount()
+    {
+        _counter++;
+    }
+
+    [Parameter]
+    public int Number { get; set; }
+
+    [Parameter]
+    public EventCallback<string> SetNewGuid { get; set; }
+
+
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        StringBuilder builder = new StringBuilder();
+        foreach (var item in parameters)
+        {
+            builder.Append($"{item.Name}=>{item.Value}");
+        }
+        Console.WriteLine($"SetParametersAsync -> Sub: ({builder.ToString()})");
+        return base.SetParametersAsync(parameters);
+    }
+
+    protected override Task OnInitializedAsync()
+    {
+        Console.WriteLine($"Intialized -> Sub");
+        return base.OnInitializedAsync();
+    }
+
+    protected override Task OnParametersSetAsync()
+    {
+        Console.WriteLine($"OnParametersSetAsync -> Sub");
+        return base.OnParametersSetAsync();
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        Console.WriteLine($"OnAfterRenderAsync (firstRender:{firstRender}) -> Sub");
+        return base.OnAfterRenderAsync(firstRender);
+    }
+
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine($"ShouldRender -> Sub");
+        return base.ShouldRender();
+    }
+
+    void Dispose()
+    {
+        Console.WriteLine($"Disposed -> Sub");
+    }
+}

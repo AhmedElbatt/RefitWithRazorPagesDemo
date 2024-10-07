@@ -18,14 +18,18 @@
             {
                 <p class="card-text">@Product.Description</p>
             }
+            <a class="btn btn-danger" href="#" role="button" @onclick="async () => OnAddedCart.InvokeAsync(Product.Name)">Add To Cart</a>
         </div>
     </div>
     <div class="zoom@_zoomVariable" @onclick="IncrementZoomOnDivClicked" style="color:@_color">
         @ChildContent
+        @if (!SummarizeDescription)
+        {
+             <button @onclick="ToggleRedColor" @onclick:stopPropagation>Toggle to Red</button>
+            <br />
+            <a href="#" @onclick="ToggleRedColor" @onclick:preventDefault @onclick:stopPropagation>Toggle to Red (a tag)</a>
+        }
 
-        <button @onclick="ToggleRedColor" @onclick:stopPropagation>Toggle to Red</button>
-        <br/>
-        <a href="#" @onclick="ToggleRedColor" @onclick:preventDefault @onclick:stopPropagation>Toggle to Red (a tag)</a>
     </div>
 
 </div>
@@ -45,6 +49,9 @@
 
     [CascadingParameter(Name = "CurrencyFormat")]
     public string CurrencyFormat { get; set; }
+
+    [Parameter]
+    public EventCallback<string> OnAddedCart { get; set; }
 
     public int _zoomVariable = 0;
 

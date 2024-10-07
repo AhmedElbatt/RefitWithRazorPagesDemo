@@ -5,10 +5,17 @@
 <PageTitle>Home</PageTitle>
 
 <div class="container mt-4">
+    @if (!string.IsNullOrEmpty(_message))
+    {
+        <div class="alert alert-success" role="alert">
+            @_message. Total Number of choosed items are : @_chosedProducts.Count()
+        </div>
+
+    }
     <div class="row">
         @foreach (var product in _products)
         {
-            <ProductComponent product="@product" />
+            <ProductComponent product="@product" OnAddedCart="ShowMessage" />
         }
     </div>
 </div>
@@ -21,5 +28,13 @@
     {
         _products = await _productService.GetProducts();
         await base.OnInitializedAsync();
+    }
+
+    string _message = string.Empty;
+    List<string> _chosedProducts = new List<string>();
+    void ShowMessage(string productName)
+    {
+        _message = $"Thanks for choosing product: {productName}";
+        _chosedProducts.Add(productName);
     }
 }

@@ -1,0 +1,90 @@
+﻿@page "/LifeCycle"
+@page "/LifeCycle/{Title}"
+@using RefitWithRazorPagesDemo.Blazor.Components
+@using System.Text
+<h3>LifeCycle</h3>
+
+<div style="border:solid">
+    <h1>@Title</h1>
+    Parent
+    UserId: @UserId
+    <button type="button" class="btn btn-primary" @onclick="ChangeNumber">Change Number</button>
+    <br />      <br />      <br />      <br />
+    <LifeCycleSubComponent Number="Number" SetNewGuid="SetNewGuid" />
+    <br />      <br />      <br />      <br />
+    <a class="link-opacity-10-hover" href="/LifeCycle">No Title</a>
+    <a class="link-opacity-10-hover" href="/LifeCycle/Title1">Title 1</a>
+    <a class="link-opacity-10-hover" href="/LifeCycle/Title2">Title 2</a>
+    <a class="link-opacity-10-hover" href="/LifeCycle/Title3">Title 3</a>
+</div>
+
+@code {
+    public LifeCycle()
+    {
+    }
+
+    public override Task SetParametersAsync(ParameterView parameters)
+    {
+        StringBuilder builder = new StringBuilder();
+        foreach (var item in parameters)
+        {
+            builder.Append($"{item.Name}=>{item.Value}");
+        }
+        Console.WriteLine($"SetParametersAsync -> Parent: ({builder.ToString()})");
+        return base.SetParametersAsync(parameters);
+    }
+
+    protected override Task OnInitializedAsync()
+    {
+        Console.WriteLine($"Intialized -> Parent");
+        return base.OnInitializedAsync();
+    }
+
+    protected override Task OnParametersSetAsync()
+    {
+        Console.WriteLine($"OnParametersSetAsync -> Parent");
+        return base.OnParametersSetAsync();
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        Console.WriteLine($"OnAfterRenderAsync (firstRender:{firstRender}) -> Parent");
+        return base.OnAfterRenderAsync(firstRender);
+    }
+
+    protected override bool ShouldRender()
+    {
+        Console.WriteLine($"ShouldRender -> Parent");
+        return base.ShouldRender();
+    }
+
+    void Dispose()
+    {
+        Console.WriteLine($"Dispose -> Parent");
+
+    }
+
+    private int _number;
+
+    [Parameter]
+    public string UserId { get; set; }
+
+    [Parameter]
+    public string Title { get; set; }
+
+
+    [Parameter]
+    public int Number { get; set; }
+
+    void ChangeNumber()
+    {
+        Number = Random.Shared.Next();
+    }
+
+    void SetNewGuid(string guid)
+    {
+        UserId = guid;
+    }
+}
+
+
